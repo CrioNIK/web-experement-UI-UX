@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install --ignore-scripts --include=dev --no-audit --no-fund",
+  "buildCommand": "npm run check",
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+    }
+  ]
+}
